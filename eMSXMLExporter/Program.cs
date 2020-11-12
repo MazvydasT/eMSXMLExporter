@@ -27,8 +27,8 @@ namespace eMSXMLExporter
 
             optionSet = new OptionSet()
             {
-                { "u|userName=", "eMS {USERNAME}", v => loginName = v },
-                { "p|password=", "eMS {PASSWORD}", v => password = v },
+                { "u|userName=", "eMS {USERNAME} (SSO used if omitted)", v => loginName = v },
+                { "p|password=", "eMS {PASSWORD} (SSO used if omitted)", v => password = v },
                 { "i|projectId=", "eMS project {ID}", (int v) => projectId = v },
                 { "e|exportedObjectId=", "Exported object {ID}", (int v) => targetObjectIds.Add(v) },
                 { "o|outputFilePath=", "Output file {PATH}", v => exportPath = v },
